@@ -8,7 +8,7 @@ import java.util.HashSet;
 public class TestPerformance {
 
 	public static void main(String[] args) {
-		Integer[] valores = { 30000, 50000, 100000, 150000, 200000 };
+		Integer[] valores = { 30000, 50000, 100000, 150000, 200000,300000, 500000, 1000000 };
 		Collection<Integer> arrayListTest = new ArrayList<>();
 		Collection<Integer> hashSetTest = new HashSet<>();
 
@@ -27,7 +27,7 @@ public class TestPerformance {
 		for (int i = 0; i < valor; i++)
 			teste.contains(i);
 
-		System.out.println(String.format("%-10s | Tempo: %-10d milisegundos para %-10d elementos.", 
+		System.out.println(String.format("%-10s | \tTempo: %-10d milisegundos para \t%-10d elementos.", 
 			    getCollectionType(teste), (System.currentTimeMillis() - inicio), valor));
 	}
 

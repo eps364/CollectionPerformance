@@ -35,7 +35,7 @@ public class TestePerformanceFull {
 		}
 		long fim = System.currentTimeMillis();
 		long tempo = fim - inicio;
-		System.out.println("Performance com ArrayList | Tempo gasto: " + tempo + " milisegundos para " + valor + " elementos");
+		System.out.println("Performance com ArrayList | \tTempo gasto: " + tempo + " milisegundos para " + valor + " elementos");
 
     }
 	
