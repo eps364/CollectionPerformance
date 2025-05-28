@@ -31,3 +31,8 @@ ArrayList possui a menor performance segundo o código utilizado.
 | HashSet     | 4                    | 100000    |
 | HashSet     | 2                    | 150000    |
 | HashSet     | 18                   | 200000    |
+| TreeSet     | 16                   | 30000     |
+| TreeSet     | 11                   | 50000     |
+| TreeSet     | 1016                 | 100000    |
+| TreeSet     | 26                   |  150000   |     
+| TreeSet     | 25                   | 200000    |     
