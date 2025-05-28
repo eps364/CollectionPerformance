@@ -21,28 +21,34 @@ Para o código mencionado, a melhor performance se deu para o HashSet.
 ArrayList possui a menor performance segundo o código utilizado.
 TreeSet apresenta performance intermediária, sendo consistentemente melhor que ArrayList mas inferior ao HashSet.
 
-### Quando usar cada um
+### Quando usar cada um?
 
-HashSet: Melhor performance geral, use quando não precisar de ordem
-TreeSet: Use quando precisar de elementos ordenados automaticamente
-ArrayList: Use quando precisar manter ordem de inserção e permitir duplicatas
+- HashSet: Melhor performance geral, use quando não precisar de ordem
+- TreeSet: Use quando precisar de elementos ordenados automaticamente
+- ArrayList: Use quando precisar manter ordem de inserção e permitir duplicatas
 
 ## Output de uma das execuções
 
-| Collection  | Tempo (milisegundos) | Elementos |
-|-------------|----------------------|-----------|
-| ArrayList   | 203                  | 30000     |
-| ArrayList   | 668                  | 50000     |
-| ArrayList   | 3316                 | 100000    |
-| ArrayList   | 11086                | 150000    |
-| ArrayList   | 62733                | 200000    |
-| HashSet     | 4                    | 30000     |
-| HashSet     | 6                    | 50000     |
-| HashSet     | 4                    | 100000    |
-| HashSet     | 2                    | 150000    |
-| HashSet     | 18                   | 200000    |
-| TreeSet     | 16                   | 30000     |
-| TreeSet     | 13                   | 50000     |
-| TreeSet     | 46                   | 100000    |
-| TreeSet     | 30                   | 150000    |     
-| TreeSet     | 54                   | 200000    |
+| Estrutura  | Tempo (ms) | Elementos |
+|------------|------------|-----------|
+| ArrayList  | 247        | 30000     |
+| HashSet    | 7          | 30000     |
+| TreeSet    | 22         | 30000     |
+| ArrayList  | 883        | 50000     |
+| HashSet    | 5          | 50000     |
+| TreeSet    | 14         | 50000     |
+| ArrayList  | 4161       | 100000    |
+| HashSet    | 8          | 100000    |
+| TreeSet    | 26         | 100000    |
+| ArrayList  | 11207      | 150000    |
+| HashSet    | 3          | 150000    |
+| TreeSet    | 26         | 150000    |
+| ArrayList  | 31458      | 200000    |
+| HashSet    | 15         | 200000    |
+| TreeSet    | 25         | 200000    |
+| ArrayList  | 110900     | 300000    |
+| HashSet    | 19         | 300000    |
+| TreeSet    | 53         | 300000    |
+| ArrayList  | 396058     | 500000    |
+| HashSet    | 42         | 500000    |
+| TreeSet    | 96         | 500000    |
