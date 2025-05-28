@@ -54,3 +54,5 @@ TreeSet apresenta performance intermediária, sendo consistentemente melhor que 
 | TreeSet    | 96         | 500000    |
 
 <img src="grafico.png" alt="alt text" width="500px">
+
+<img src="grafico2.png" alt="alt text" width="500px">
