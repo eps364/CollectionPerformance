@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.TreeSet;
 
 public class TestPerformance {
 
@@ -11,10 +12,12 @@ public class TestPerformance {
 		Integer[] valores = { 30000, 50000, 100000, 150000, 200000,300000, 500000, 1000000 };
 		Collection<Integer> arrayListTest = new ArrayList<>();
 		Collection<Integer> hashSetTest = new HashSet<>();
+		Collection<Integer> hashTreeSet = new TreeSet<>();
 
 		Arrays.stream(valores).forEach(valor -> {
 			CollectionPerformance(arrayListTest, valor);
 			CollectionPerformance(hashSetTest, valor);
+			CollectionPerformance(hashTreeSet, valor);
 		});
 
 	}
@@ -32,7 +35,7 @@ public class TestPerformance {
 	}
 
 	private static String getCollectionType(Collection<Integer> teste) {
-		return teste instanceof ArrayList ? "ArrayList" : "HashSet";
+		return teste.getClass().getSimpleName();
 	}
 }
 
