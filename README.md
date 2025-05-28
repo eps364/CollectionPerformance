@@ -52,3 +52,5 @@ TreeSet apresenta performance intermediária, sendo consistentemente melhor que 
 | ArrayList  | 396058     | 500000    |
 | HashSet    | 42         | 500000    |
 | TreeSet    | 96         | 500000    |
+
+<img src="grafico.png" alt="alt text" width="500px">
